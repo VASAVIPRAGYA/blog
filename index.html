@@ -13,6 +13,23 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+ <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+                    <script>
+                    // Initialize Firebase
+                     var config = {
+                     apiKey: "AIzaSyAdDFWc8ewgyImby8m0IaxzyxCCNFsxkLM",
+                     authDomain: "ezesoft-41006.firebaseapp.com",
+                     databaseURL: "https://ezesoft-41006.firebaseio.com",
+                     projectId: "ezesoft-41006",
+                     storageBucket: "ezesoft-41006.appspot.com",
+                     messagingSenderId: "24685312704"
+                                    };
+                    firebase.initializeApp(config);
+                    </script>
+
+
 	</head>
 	<body>
 
@@ -52,13 +69,11 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/eze2.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/Heritage.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">   Eze software  </h2>
+										<h2 class="major">   Culture of India </h2>
 										
-										<p>     Eze Software's innovative technology, superior client service, and 
-												collaborative expertise have made us a trusted partner platform 
-												choice for global investment managers and broker dealers across the globe.
+										<p>  The culture of India refers collectively to the thousands of distinct and unique cultures of all religions and communities present in India. India's languages, religions, dance, music, architecture, food, and customs differs from place to place within the country. The Indian culture, often labeled as an amalgamation of several cultures, spans across the Indian subcontinent and has been influenced by a history that is several millennia old. Many elements of India's diverse cultures, such as Indian religions, Indian philosophy and Indian cuisine, have a profound impact across the world.
 										</p>
 
 										<a href="post1.html" class="special">Learn more</a>
@@ -90,21 +105,27 @@
 
 							<p> </p>
 
-							<form method="post" action="#">
+							<form>
 								<div class="field">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" />
+									<button id="doneBtn" onclick="doneClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                                
 								</div>
 								<div class="field">
 									<label for="email">Email</label>
 									<input type="email" name="email" id="email" />
+                                    <button id="doneBtn" onclick="doneClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
 									<textarea name="message" id="message" rows="4"></textarea>
+                                    <button id="doneBtn" onclick="doneClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="button" onclick="doneClick()" value="Send Message" /></li>
 								</ul>
 							</form>
 
@@ -114,7 +135,7 @@
 								<li class="fa-home">
 									Address <br />
 									406-VIZAG PROFILES RESIDENCY ,<br> Marripalem,Punjab Hotel Junction<br />
-									Vishakhapatam, AP, 50007
+									Vishakhapatam, AP, s50007
 								</li>
 								<li class="fa-phone">+91-9704846846</li>
 								<li class="fa-envelope"><a href="https://plus.google.com/">vasavipragya@gmail.com</a></li>
@@ -126,7 +147,10 @@
                           </ul>
              
             </div>
-            
+         
+            <script src="index.js"></script>
+
+
 		<!-- Scripts -->
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
